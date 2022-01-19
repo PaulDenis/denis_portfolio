@@ -1,24 +1,22 @@
 <template>
   <div id="app">
     <Header />
+    <NavBar />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import NavBar from './components/NavBar.vue'
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    NavBar
   }
 }
 </script>
 
 <style lang="scss">
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+  @import './style/common'; 
 </style>

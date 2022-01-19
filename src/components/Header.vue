@@ -1,5 +1,6 @@
 !<template>
-    <div class="container">
+    <!-- Qui ci va la mia descrizione e una mia foto, per far vedere chi sono e qual'è il mio scopo. -->
+    <div class="my_container">
         <img src="../assets/DenisPicture.jpg" alt="">
         <div class="fading">
         </div>
@@ -14,15 +15,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .container {
+    @import '../style/variables.scss';
+
+    .my_container {
         width:100%;
         height: 100vh;
+        padding-left: 20px;
         position:relative;
         background-color: black;
         overflow: hidden;
         .text {
-            padding-top: 100px;
-            color: orangered;
+            padding-top: 150px;
+            color: $main_color;
             font-size: 24px;
             line-height: 40px;
         }

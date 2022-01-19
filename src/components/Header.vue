@@ -4,7 +4,7 @@
         <img src="../assets/DenisPicture.jpg" alt="">
         <div class="fading">
         </div>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus suscipit doloribus iusto! In, aspernatur nam impedit nulla est eaque! Rerum error dignissimos tempora voluptas nihil reiciendis itaque atque quod recusandae et fugit beatae molestiae soluta, doloremque iure minima amet pariatur mollitia dolor asperiores architecto temporibus. Labore ducimus, voluptatibus illo nulla iste quibusdam! Odit, et molestiae repudiandae aspernatur perspiciatis, aliquam voluptates obcaecati qui corrupti distinctio, eos quae nihil explicabo doloremque non sequi. Temporibus libero asperiores nostrum? Ea, voluptates iusto molestias rem repudiandae veniam nisi quia eius, officiis consequatur aliquid, magni doloremque esse eos id porro quo eveniet minus! Omnis, saepe possimus.</p>
+        <p class="text">Lorem ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Repellendus suscipit doloribus iusto! In, aspernatur nam impedit nulla <span>est eaque</span>! Rerum error dignissimos tempora voluptas nihil reiciendis itaque atque quod recusandae et fugit beatae molestiae soluta, doloremque iure minima amet pariatur mollitia dolor asperiores architecto temporibus. Labore ducimus, voluptatibus illo nulla iste quibusdam! Odit, et molestiae repudiandae aspernatur perspiciatis, aliquam voluptates obcaecati qui <span>corrupti distinctio</span>, eos quae nihil explicabo doloremque non sequi. Temporibus libero asperiores nostrum? Ea, voluptates iusto molestias rem repudiandae veniam nisi quia eius, officiis consequatur aliquid, magni doloremque esse eos id porro quo eveniet minus! Omnis, saepe possimus.</p>
     </div>
 </template>
 
@@ -29,6 +29,9 @@ export default {
             color: $main_color;
             font-size: 24px;
             line-height: 40px;
+            span {
+                color: white;
+            }
         }
         img {
             height: 100vh;

@@ -4,7 +4,15 @@
         <img src="../assets/DenisPicture.jpg" alt="">
         <div class="fading">
         </div>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus suscipit doloribus iusto! In, aspernatur nam impedit nulla est eaque! Rerum error dignissimos tempora voluptas nihil reiciendis itaque atque quod recusandae et fugit beatae molestiae soluta, doloremque iure minima amet pariatur mollitia dolor asperiores architecto temporibus. Labore ducimus, voluptatibus illo nulla iste quibusdam! Odit, et molestiae repudiandae aspernatur perspiciatis, aliquam voluptates obcaecati qui corrupti distinctio, eos quae nihil explicabo doloremque non sequi. Temporibus libero asperiores nostrum? Ea, voluptates iusto molestias rem repudiandae veniam nisi quia eius, officiis consequatur aliquid, magni doloremque esse eos id porro quo eveniet minus! Omnis, saepe possimus.</p>
+        <p class="text">
+            Hi, my name is Denis Paul and I am a <span>Web Developer</span>.
+            <br>
+            I started to first develope my developing skills in March of 2021, with an intensive <span>full-stack web developer</span> course. It was not easy, but I can now create a website from scratch to afull functional website. I'm <span>specializing myself</span> in Vue.JS (a framework that only makes my life a bit easyer while working). Before finding this passion a tryed out a few other paths, like <span>Gaming development</span>. 
+            In the end I fell in love with <span>front-end developing</span> and I'm <span>improving my skills</span> every day.
+            <br>
+            I also have a <span>Youtube Channel</span> if you want to learn about programming. On this channel I do some tutorials, tips & trick, and other.
+        </p>
+        <h3>If you want to know more about me and my story, <a href="#"> click here</a> <i class="fas fa-location-arrow"></i></h3>
     </div>
 </template>
 
@@ -25,15 +33,35 @@ export default {
         background-color: black;
         overflow: hidden;
         .text {
-            padding-top: 150px;
+            padding-top: 100px;
             color: $main_color;
-            font-size: 24px;
+            font-size: 22px;
             line-height: 40px;
+            span {
+                color: white;
+            }
         }
+        h3 {
+                margin-top: 100px;
+                color: $opposite_color;
+                a {
+                    color: $opposite_color;
+                }
+                a:hover {
+                    cursor: pointer;
+                }
+            }
         img {
             height: 100vh;
             float: right;
         }
+    }
+    .fa-location-arrow {
+        position: relative;
+        top: 20px;
+        right: 10px;
+        transform: rotate(270deg);
+        animation: click_anim 4s infinite;
     }
     .fading{
         position: absolute;
@@ -52,5 +80,18 @@ export default {
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
     }
 
-
+    @keyframes click_anim {
+        0% {
+            top: 20px;
+            right: 10px;
+        }
+        50% {
+            top: 40px;
+            right: -20px;
+        }
+        100% {
+            top: 20px;
+            right: 10px;
+        }
+    }
 </style>

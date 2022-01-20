@@ -34,6 +34,7 @@ export default {
         overflow: hidden;
         .text {
             padding-top: 100px;
+            width: 51%;
             color: $main_color;
             font-size: 22px;
             line-height: 40px;

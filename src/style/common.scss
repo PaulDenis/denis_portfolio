@@ -7,3 +7,22 @@
     margin: 0;
     padding: 0;
   }
+
+.highlit {
+  color: white;
+}
+
+@keyframes click_anim {
+  0% {
+      top: 20px;
+      right: 10px;
+  }
+  50% {
+      top: 40px;
+      right: -20px;
+  }
+  100% {
+      top: 20px;
+      right: 10px;
+  }
+}

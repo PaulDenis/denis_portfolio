@@ -42,6 +42,9 @@ export default {
             color: black;
             text-decoration: none;
             font-weight: 700;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

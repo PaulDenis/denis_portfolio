@@ -77,19 +77,4 @@ export default {
         background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0) 70%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
     }
-
-    @keyframes click_anim {
-        0% {
-            top: 20px;
-            right: 10px;
-        }
-        50% {
-            top: 40px;
-            right: -20px;
-        }
-        100% {
-            top: 20px;
-            right: 10px;
-        }
-    }
 </style>

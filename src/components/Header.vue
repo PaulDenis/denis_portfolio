@@ -5,12 +5,12 @@
         <div class="fading">
         </div>
         <p class="text">
-            Hi, my name is Denis Paul and I am a <span>Web Developer</span>.
+            Hi, my name is Denis Paul and I am a <span class="highlit">Web Developer</span>.
             <br>
-            I started to first develope my developing skills in March of 2021, with an intensive <span>full-stack web developer</span> course. It was not easy, but I can now create a website from scratch to afull functional website. I'm <span>specializing myself</span> in Vue.JS (a framework that only makes my life a bit easyer while working). Before finding this passion a tryed out a few other paths, like <span>Gaming development</span>. 
-            In the end I fell in love with <span>front-end developing</span> and I'm <span>improving my skills</span> every day.
+            I started to first develope my developing skills in March of 2021, with an intensive <span class="highlit">full-stack web developer</span> course. It was not easy, but I can now create a website from scratch to afull functional website. I'm <span class="highlit">specializing myself</span> in Vue.JS (a framework that only makes my life a bit easyer while working). Before finding this passion a tryed out a few other paths, like <span class="highlit">Gaming development</span>. 
+            In the end I fell in love with <span class="highlit">front-end developing</span> and I'm <span class="highlit">improving my skills</span> every day.
             <br>
-            I also have a <span>Youtube Channel</span> if you want to learn about programming. On this channel I do some tutorials, tips & trick, and other.
+            I also have a <span class="highlit">Youtube Channel</span> if you want to learn about programming. On this channel I do some tutorials, tips & trick, and other.
         </p>
         <h3>If you want to know more about me and my story, <a href="#"> click here</a> <i class="fas fa-location-arrow"></i></h3>
     </div>
@@ -38,9 +38,6 @@ export default {
             color: $main_color;
             font-size: 22px;
             line-height: 40px;
-            span {
-                color: white;
-            }
         }
         h3 {
                 margin-top: 100px;

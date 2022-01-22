@@ -8,8 +8,10 @@
             <li><a href="#">Gallery</a></li>
         </ul>
         <div class="lingue">
-            <img v-if="current == ''" src="../assets/us.svg" alt="american english" class="flags">
-            <img v-else :src="current.url" :alt="current.lingua" class="flags">
+            <img v-if="current == ''" v-on:click="lingue = !lingue"
+            src="../assets/us.svg" alt="american english" class="flags">
+            <img v-else v-on:click="lingue = !lingue"
+            :src="current.url" :alt="current.lingua" class="flags">
             <i class="fas fa-chevron-down"  v-on:click="lingue = !lingue"></i>
             <div class="container_lingue"
             v-if="lingue==true">
@@ -101,6 +103,9 @@ export default {
         .flags {
             height: 20px;
             width: 20px;
+            &:hover {
+                cursor: pointer;
+            }
         }
         .fa-chevron-down {
             position: relative;

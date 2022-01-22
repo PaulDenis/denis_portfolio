@@ -40,6 +40,7 @@ export default {
             line-height: 40px;
         }
         h3 {
+            font-size: 27px;
                 margin-top: 100px;
                 color: $opposite_color;
                 a {

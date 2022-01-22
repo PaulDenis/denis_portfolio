@@ -7,7 +7,7 @@
         <p class="text">
             Hi, my name is Denis Paul and I am a <span class="highlit">Web Developer</span>.
             <br>
-            I started to first develope my developing skills in March of 2021, with an intensive <span class="highlit">full-stack web developer</span> course. It was not easy, but I can now create a website from scratch to afull functional website. I'm <span class="highlit">specializing myself</span> in Vue.JS (a framework that only makes my life a bit easyer while working). Before finding this passion a tryed out a few other paths, like <span class="highlit">Gaming development</span>. 
+            I started to first develope my developing skills in March of 2021, with an intensive <span class="highlit">full-stack web developer</span> course. It was not easy, but I can now create a website from scratch to afull functional website. I'm <span class="highlit">specializing</span> in Vue.JS (a framework that only makes my life a bit easyer while working). Before finding this passion a tryed out a few other paths, like <span class="highlit">Gaming development</span>. 
             In the end I fell in love with <span class="highlit">front-end developing</span> and I'm <span class="highlit">improving my skills</span> every day.
             <br>
             I also have a <span class="highlit">Youtube Channel</span> if you want to learn about programming. On this channel I do some tutorials, tips & trick, and other.
@@ -40,8 +40,8 @@ export default {
             line-height: 40px;
         }
         h3 {
-            font-size: 27px;
-                margin-top: 100px;
+            font-size: 24px;
+                margin-top: 50px;
                 color: $opposite_color;
                 a {
                     color: $opposite_color;

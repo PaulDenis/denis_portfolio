@@ -120,6 +120,7 @@ export default {
         padding-bottom: 5px;
         position: absolute;
         right: 70px;
+        top: 30px;
         background-color: $opposite_color;
     }
 

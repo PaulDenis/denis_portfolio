@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <NavBar />
+    <NavBar @lingua="setLingua" />
     <Content />
   </div>
 </template>
@@ -16,6 +16,17 @@ export default {
     Header,
     NavBar,
     Content
+  },
+  data() {
+    return {
+      lingua:"american english"
+    }
+  },
+  methods: {
+    setLingua: function(lingua) {
+      // console.log(lingua)
+      return this.lingua = lingua;
+    }
   }
 }
 </script>

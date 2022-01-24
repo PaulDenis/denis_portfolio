@@ -3,6 +3,7 @@
     <Header />
     <NavBar @lingua="setLingua" />
     <Content />
+    <Footer />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Header from './components/Header.vue'
 import NavBar from './components/NavBar.vue'
 import Content from './components/Content.vue'
+import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
     Header,
     NavBar,
-    Content
+    Content,
+    Footer
   },
   data() {
     return {

@@ -18,6 +18,7 @@ export default {
 
     .job_desc {
         height: 60vh;
+        padding-right: 20px;
         background-image: linear-gradient(black, $opposite_color);
         .upper {
             padding-top: 6%;

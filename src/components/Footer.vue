@@ -50,6 +50,7 @@ export default {
     padding-bottom: 20px;
     li {
         display: inline-block;
+        margin-top: 0;
         margin: 10px;
             &:first-child {
             margin-left: 0;

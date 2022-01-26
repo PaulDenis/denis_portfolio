@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :lingua="lingua"/>
     <NavBar @lingua="setLingua" />
-    <Content />
-    <Footer />
+    <Content :lingua="lingua"/>
+    <Footer :lingua="lingua"/>
   </div>
 </template>
 

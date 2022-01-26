@@ -9,7 +9,10 @@
 
 <script>
 export default {
-    name: 'Job'
+    name: 'Job',
+    props: {
+        lingua: String
+    }
 }
 </script>
 

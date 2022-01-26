@@ -65,12 +65,13 @@ export default {
     @import '../style/common.scss';
 
     .inline_menu {
+        position: fixed;
+        top: 0;
+        z-index: 10;
         display: flex;
         justify-content: space-between;
         width: 100%;
         height: 35px;
-        position: fixed;
-        top: 0;
         background-color: $opposite_color;
         // background-image: linear-gradient(to right, $opposite_color, white);
         ul {

@@ -41,6 +41,7 @@ export default {
     }
     .fa-location-arrow {
         position: relative;
+        z-index: 1;
         top: 20px;
         right: 10px;
         transform: rotate(270deg);

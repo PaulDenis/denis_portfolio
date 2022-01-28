@@ -1,7 +1,7 @@
 <template>
     <div class="content">
-        <Job />
-        <Youtube />
+        <Job :lingua="lingua"/>
+        <Youtube :lingua="lingua"/>
     </div>
 </template>
 
@@ -14,6 +14,9 @@ export default {
     components: {
         Job,
         Youtube
+    },
+    props: {
+        lingua: String
     }
 }
 </script>

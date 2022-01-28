@@ -1,12 +1,32 @@
 <template>
     <!-- Una normale barra di navigazione, non troppo complessa in quanto si baserà principalmente sulla home -->
     <div  class="inline_menu">
-        <ul>
+
+        <!-- nav bar inglese -->
+        <ul v-if="lingua=='american english'">
             <li><a href="#">Home</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">About me</a></li>
             <li><a href="#">Gallery</a></li>
         </ul>
+
+        <!-- navbar italiana -->
+        <ul v-if="lingua=='italian'">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Progetti</a></li>
+            <li><a href="#">Su di me</a></li>
+            <li><a href="#">Galleria</a></li>
+        </ul>
+
+        <!-- navbar rumena -->
+        <ul v-if="lingua=='romanian'">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Proiecte</a></li>
+            <li><a href="#">Despre mine</a></li>
+            <li><a href="#">Galerie</a></li>
+        </ul>
+
+        <!-- bandiere per cambiare lingua -->
         <div class="lingue">
             <img v-if="current == ''" v-on:click="lingue = !lingue"
             src="../assets/us.svg" alt="american english" class="flags">
@@ -31,6 +51,9 @@ export default {
         return {
             lingua: 'american english',
             lingue: false,
+            
+            // qui verranno inserite tutte le bandiere per cambiare lingua 
+            // fino a quando non aggiungerò il database
             flags: [ 
                 {
                     lingua:'american english',

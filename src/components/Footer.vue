@@ -1,12 +1,35 @@
 <template>
     <div class="footer_container">
         <div class="left_footer">
-            <ul class="footer_menu">
+
+        <!-- Footer inglese -->
+            <ul class="footer_menu"
+            v-if="lingua=='american english'">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About me</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Gallery</a></li>
                 <!-- <li><a href="#">Pre-Sets</a></li> -->
+            </ul>
+
+            <!-- Footer italiano -->
+            <ul class="footer_menu"
+            v-if="lingua=='italian'">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Su di me</a></li>
+                <li><a href="#">Progetti</a></li>
+                <li><a href="#">Galleria</a></li>
+                <!-- <li><a href="#">Pre-sets</a></li> -->
+            </ul>
+
+            <!-- Footer rumeno -->
+            <ul class="footer_menu"
+            v-if="lingua=='romanian'">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Despre mine</a></li>
+                <li><a href="#">Proiecte</a></li>
+                <li><a href="#">Galerie</a></li>
+                <!-- <li><a href="#">Pre-sets</a></li> -->
             </ul>
             <ul class="inline_menu">
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -16,10 +39,15 @@
                 <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
             </ul>
         </div>
-        <p>&copy; copyright preotected</p>
+        <p v-if="lingua=='american english'">&copy; copyright preotected</p>
+        <p v-if="lingua=='italian'">&copy; Protetto da copyright</p>
+        <p v-if="lingua=='romanian'">&copy; protejat de copyright</p>
+
         <div class="right_footer">
             <ul>
-                <li>Contact me</li>
+                <li v-if="lingua=='american english'">Contact me</li>
+                <li v-if="lingua=='italian'">Contattami</li>
+                <li v-if="lingua=='romanian'">Contacteaza-ma</li>
                 <li><a href="#">+39 123 123 1234</a></li>
                 <li><a href="#">d.paul@outlook.it</a></li>
                 <li><a href="#">Via roma 1 - Modena, Italy</a></li>
@@ -31,7 +59,10 @@
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    props: {
+        lingua: String
+    }
 }
 </script>
 

@@ -18,7 +18,7 @@
         </div>
 
         <!-- testo rumeno -->
-        <div v-if="lingua=='romenian'">
+        <div v-if="lingua=='romanian'">
             <img src="../assets/DenixLogo.png" alt="Fox logo" class="logo">
             <p class="upper">Cu cariera mea de freelancer vreau sa ofer un <span class="highlit">serviciu de calitate</span>, la un pret vantajos cum ca inca invat. Nu imi voi incepe activitatea pana nu sunt destul de confident <span class="highlit">cca pot sa fac aproape ori ce</span> un client imi va cere. Pe parcursul carierei voi <span class="highlit">crea niste pre-seturi</span> printe care clienti sa poata alege, in caz de vor un site mai economic. Pre-seturile vor fi mai putin personalizabile, dar pot fi si un punct de inceput pentru un site total personalizat.</p>
             <p class="lower">Tineti minte ca chear de sunt un full-stack developer, momentan sunt <span class="highlit">orientat la front-end</span> developer. Asta inseamna ca imi voi imbunatati abilitatile de front-end intai. Asa deci daca vreti un website cu database, imi va lua <span class="highlit">mai mult timp</span> sa il completez, dar tot voi reusi sa il fac. Pe viitor voi completa abilitatile mele cu skilluri de back-end.</p>
